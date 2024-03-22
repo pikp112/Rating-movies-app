@@ -1,0 +1,21 @@
+<div class="login-container">
+    <img class="film" src="assets/images/film.png" alt="">
+    <div class="logo">Lorem Ipsum</div>
+    <div class="desc">Proin ut faucibus est, et euismod nulla. Sed sed fringilla augue. Sed semper justo nisl, at mattis metus fringilla eget. Vivamus nec est turpis. Mauris non sem eleifend, malesuada nibh eget, viverra eros. Maecenas mollis erat sed bibendum vehicula. Nullam magna sem, vehicula quis consectetur et, pulvinar id libero. Maecenas id eros nulla. Integer elementum, arcu et ultricies accumsan, turpis metus dignissim massa, eget condimentum arcu urna at nunc. Aenean lectus urna, tristique quis tellus eget, imperdiet euismod massa. In hac habitasse platea dictumst. Vestibulum eget mollis sapien. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec posuere efficitur efficitur. Curabitur tellus ex, sodales a auctor et, semper a felis. Mauris eget lectus sed ligula congue auctor vitae ut massa.
+
+        Ut sodales urna at sagittis tincidunt. Nunc tincidunt nunc vel massa commodo, a laoreet tellus vestibulum. Nulla eleifend sem in tristique efficitur. Sed urna arcu, ultrices ac consectetur quis, rhoncus vel est. In sagittis posuere eros et tempor. Quisque auctor lacinia tincidunt. Aenean vulputate vitae turpis non vestibulum. Vestibulum ac nibh nibh. Fusce nec viverra eros, et dignissim eros. Phasellus et justo est.</div>
+    <div class="login-form">
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" name="username" class="form-control" placeholder="Enter username" [(ngModel)]="username">
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" name="password" class="form-control" placeholder="Enter password" [(ngModel)]="password">
+        </div>
+        <div class="btn-container">
+            <div class="error"> {{ errorMsg }}</div>
+            <button class="btn btn-dark" (click)="onLogin()">Login</button>
+        </div>
+    </div>
+</div>
